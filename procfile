@@ -1,1 +1,2 @@
+Procfile.windows
 web:gunicorn app:app
