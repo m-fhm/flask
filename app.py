@@ -12,7 +12,7 @@ class User(db.Model):
 def index():
     return 'welcome to the page'
 @app.route('/<name>/<email>')
-def index(name,email):
+def insert(name,email):
     user = User(username=name,email=email)
     db.session.add(user)
     db.session.commit()
